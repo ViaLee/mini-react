@@ -13,8 +13,9 @@ importers:
       eslint-config-prettier: ^8.7.0
       eslint-plugin-prettier: ^4.2.1
       eslint-plugin,: link:@typescript-eslint/eslint-plugin,
-      husky: ^8.0.3
+      husky: ^8.0.1
       prettier: ^2.8.4
+      rollup: ^3.19.1
       typescript: ^4.9.5
     devDependencies:
       '@commitlint/cli': npm-verdaccio.gaodunwangxiao.com/@commitlint/cli/17.4.4
@@ -28,6 +29,7 @@ importers:
       eslint-plugin,: link:@typescript-eslint/eslint-plugin,
       husky: npm-verdaccio.gaodunwangxiao.com/husky/8.0.3
       prettier: npm-verdaccio.gaodunwangxiao.com/prettier/2.8.4
+      rollup: npm-verdaccio.gaodunwangxiao.com/rollup/3.19.1
       typescript: npm-verdaccio.gaodunwangxiao.com/typescript/4.9.5
 
 packages:
@@ -1339,6 +1341,16 @@ packages:
     version: 1.0.0
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/fsevents/-/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   npm-verdaccio.gaodunwangxiao.com/function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/function-bind/-/function-bind-1.1.1.tgz}
     name: function-bind
@@ -2269,6 +2281,16 @@ packages:
     hasBin: true
     dependencies:
       glob: npm-verdaccio.gaodunwangxiao.com/glob/7.2.3
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/rollup/3.19.1:
+    resolution: {integrity: sha512-lAbrdN7neYCg/8WaoWn/ckzCtz+jr70GFfYdlf50OF7387HTg+wiuiqJRFYawwSPpqfqDNYqK7smY/ks2iAudg==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/rollup/-/rollup-3.19.1.tgz}
+    name: rollup
+    version: 3.19.1
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: npm-verdaccio.gaodunwangxiao.com/fsevents/2.3.2
     dev: true
 
   npm-verdaccio.gaodunwangxiao.com/run-parallel/1.2.0:
