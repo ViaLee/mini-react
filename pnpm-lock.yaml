@@ -6,6 +6,7 @@ importers:
     specifiers:
       '@commitlint/cli': ^17.4.4
       '@commitlint/config-conventional': ^17.4.4
+      '@rollup/plugin-commonjs': 24.1.0-0
       '@typescript-eslint/eslint-plugin': ^5.55.0
       '@typescript-eslint/parser': ^5.55.0
       commitlint: ^17.4.4
@@ -16,10 +17,12 @@ importers:
       husky: ^8.0.1
       prettier: ^2.8.4
       rollup: ^3.19.1
+      rollup-plugin-typescript2: ^0.34.1
       typescript: ^4.9.5
     devDependencies:
       '@commitlint/cli': npm-verdaccio.gaodunwangxiao.com/@commitlint/cli/17.4.4
       '@commitlint/config-conventional': npm-verdaccio.gaodunwangxiao.com/@commitlint/config-conventional/17.4.4
+      '@rollup/plugin-commonjs': npm-verdaccio.gaodunwangxiao.com/@rollup/plugin-commonjs/24.1.0-0_rollup@3.19.1
       '@typescript-eslint/eslint-plugin': npm-verdaccio.gaodunwangxiao.com/@typescript-eslint/eslint-plugin/5.55.0_342y7v4tc7ytrrysmit6jo4wri
       '@typescript-eslint/parser': npm-verdaccio.gaodunwangxiao.com/@typescript-eslint/parser/5.55.0_vgl77cfdswitgr47lm5swmv43m
       commitlint: npm-verdaccio.gaodunwangxiao.com/commitlint/17.4.4
@@ -30,6 +33,7 @@ importers:
       husky: npm-verdaccio.gaodunwangxiao.com/husky/8.0.3
       prettier: npm-verdaccio.gaodunwangxiao.com/prettier/2.8.4
       rollup: npm-verdaccio.gaodunwangxiao.com/rollup/3.19.1
+      rollup-plugin-typescript2: npm-verdaccio.gaodunwangxiao.com/rollup-plugin-typescript2/0.34.1_h4kaxwm6ctjivrsm4cpxaz7nqu
       typescript: npm-verdaccio.gaodunwangxiao.com/typescript/4.9.5
 
 packages:
@@ -393,6 +397,55 @@ packages:
       fastq: npm-verdaccio.gaodunwangxiao.com/fastq/1.15.0
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/@rollup/plugin-commonjs/24.1.0-0_rollup@3.19.1:
+    resolution: {integrity: sha512-KwRe4Hmz+6eHAmjLXxE8LGgGxzhErrFAw5T2yqGxVOViwo3bsDtmERopvM4Fkz/7FO2TBM2qZei6YRlE/n+Nzg==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/@rollup%2fplugin-commonjs/-/plugin-commonjs-24.1.0-0.tgz}
+    id: npm-verdaccio.gaodunwangxiao.com/@rollup/plugin-commonjs/24.1.0-0
+    name: '@rollup/plugin-commonjs'
+    version: 24.1.0-0
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.68.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': npm-verdaccio.gaodunwangxiao.com/@rollup/pluginutils/5.0.2_rollup@3.19.1
+      commondir: npm-verdaccio.gaodunwangxiao.com/commondir/1.0.1
+      estree-walker: npm-verdaccio.gaodunwangxiao.com/estree-walker/2.0.2
+      glob: npm-verdaccio.gaodunwangxiao.com/glob/8.1.0
+      is-reference: npm-verdaccio.gaodunwangxiao.com/is-reference/1.2.1
+      magic-string: npm-verdaccio.gaodunwangxiao.com/magic-string/0.27.0
+      rollup: npm-verdaccio.gaodunwangxiao.com/rollup/3.19.1
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/@rollup/pluginutils/4.2.1:
+    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/@rollup%2fpluginutils/-/pluginutils-4.2.1.tgz}
+    name: '@rollup/pluginutils'
+    version: 4.2.1
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      estree-walker: npm-verdaccio.gaodunwangxiao.com/estree-walker/2.0.2
+      picomatch: npm-verdaccio.gaodunwangxiao.com/picomatch/2.3.1
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/@rollup/pluginutils/5.0.2_rollup@3.19.1:
+    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/@rollup%2fpluginutils/-/pluginutils-5.0.2.tgz}
+    id: npm-verdaccio.gaodunwangxiao.com/@rollup/pluginutils/5.0.2
+    name: '@rollup/pluginutils'
+    version: 5.0.2
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': npm-verdaccio.gaodunwangxiao.com/@types/estree/1.0.0
+      estree-walker: npm-verdaccio.gaodunwangxiao.com/estree-walker/2.0.2
+      picomatch: npm-verdaccio.gaodunwangxiao.com/picomatch/2.3.1
+      rollup: npm-verdaccio.gaodunwangxiao.com/rollup/3.19.1
+    dev: true
+
   npm-verdaccio.gaodunwangxiao.com/@tsconfig/node10/1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/@tsconfig%2fnode10/-/node10-1.0.9.tgz}
     name: '@tsconfig/node10'
@@ -415,6 +468,12 @@ packages:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/@tsconfig%2fnode16/-/node16-1.0.3.tgz}
     name: '@tsconfig/node16'
     version: 1.0.3
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/@types/estree/1.0.0:
+    resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/@types%2festree/-/estree-1.0.0.tgz}
+    name: '@types/estree'
+    version: 1.0.0
     dev: true
 
   npm-verdaccio.gaodunwangxiao.com/@types/json-schema/7.0.11:
@@ -728,6 +787,14 @@ packages:
       concat-map: npm-verdaccio.gaodunwangxiao.com/concat-map/0.0.1
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/brace-expansion/2.0.1:
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/brace-expansion/-/brace-expansion-2.0.1.tgz}
+    name: brace-expansion
+    version: 2.0.1
+    dependencies:
+      balanced-match: npm-verdaccio.gaodunwangxiao.com/balanced-match/1.0.2
+    dev: true
+
   npm-verdaccio.gaodunwangxiao.com/braces/3.0.2:
     resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/braces/-/braces-3.0.2.tgz}
     name: braces
@@ -835,6 +902,12 @@ packages:
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/commondir/1.0.1:
+    resolution: {integrity: sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/commondir/-/commondir-1.0.1.tgz}
+    name: commondir
+    version: 1.0.1
     dev: true
 
   npm-verdaccio.gaodunwangxiao.com/compare-func/2.0.0:
@@ -1201,6 +1274,12 @@ packages:
     engines: {node: '>=4.0'}
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/estree-walker/2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/estree-walker/-/estree-walker-2.0.2.tgz}
+    name: estree-walker
+    version: 2.0.2
+    dev: true
+
   npm-verdaccio.gaodunwangxiao.com/esutils/2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/esutils/-/esutils-2.0.3.tgz}
     name: esutils
@@ -1288,6 +1367,17 @@ packages:
       to-regex-range: npm-verdaccio.gaodunwangxiao.com/to-regex-range/5.0.1
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/find-cache-dir/3.3.2:
+    resolution: {integrity: sha512-wXZV5emFEjrridIgED11OoUKLxiYjAcqot/NJdAkOhlJ+vGzwhOAfcG5OX1jP+S0PcjEn8bdMJv+g2jwQ3Onig==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/find-cache-dir/-/find-cache-dir-3.3.2.tgz}
+    name: find-cache-dir
+    version: 3.3.2
+    engines: {node: '>=8'}
+    dependencies:
+      commondir: npm-verdaccio.gaodunwangxiao.com/commondir/1.0.1
+      make-dir: npm-verdaccio.gaodunwangxiao.com/make-dir/3.1.0
+      pkg-dir: npm-verdaccio.gaodunwangxiao.com/pkg-dir/4.2.0
+    dev: true
+
   npm-verdaccio.gaodunwangxiao.com/find-up/4.1.0:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/find-up/-/find-up-4.1.0.tgz}
     name: find-up
@@ -1322,6 +1412,17 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/flatted/-/flatted-3.2.7.tgz}
     name: flatted
     version: 3.2.7
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/fs-extra/10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/fs-extra/-/fs-extra-10.1.0.tgz}
+    name: fs-extra
+    version: 10.1.0
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: npm-verdaccio.gaodunwangxiao.com/graceful-fs/4.2.10
+      jsonfile: npm-verdaccio.gaodunwangxiao.com/jsonfile/6.1.0
+      universalify: npm-verdaccio.gaodunwangxiao.com/universalify/2.0.0
     dev: true
 
   npm-verdaccio.gaodunwangxiao.com/fs-extra/11.1.0:
@@ -1414,6 +1515,19 @@ packages:
       minimatch: npm-verdaccio.gaodunwangxiao.com/minimatch/3.1.2
       once: npm-verdaccio.gaodunwangxiao.com/once/1.4.0
       path-is-absolute: npm-verdaccio.gaodunwangxiao.com/path-is-absolute/1.0.1
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/glob/8.1.0:
+    resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/glob/-/glob-8.1.0.tgz}
+    name: glob
+    version: 8.1.0
+    engines: {node: '>=12'}
+    dependencies:
+      fs.realpath: npm-verdaccio.gaodunwangxiao.com/fs.realpath/1.0.0
+      inflight: npm-verdaccio.gaodunwangxiao.com/inflight/1.0.6
+      inherits: npm-verdaccio.gaodunwangxiao.com/inherits/2.0.4
+      minimatch: npm-verdaccio.gaodunwangxiao.com/minimatch/5.1.6
+      once: npm-verdaccio.gaodunwangxiao.com/once/1.4.0
     dev: true
 
   npm-verdaccio.gaodunwangxiao.com/global-dirs/0.1.1:
@@ -1637,6 +1751,14 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/is-reference/1.2.1:
+    resolution: {integrity: sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/is-reference/-/is-reference-1.2.1.tgz}
+    name: is-reference
+    version: 1.2.1
+    dependencies:
+      '@types/estree': npm-verdaccio.gaodunwangxiao.com/@types/estree/1.0.0
+    dev: true
+
   npm-verdaccio.gaodunwangxiao.com/is-stream/2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/is-stream/-/is-stream-2.0.1.tgz}
     name: is-stream
@@ -1837,6 +1959,24 @@ packages:
       yallist: npm-verdaccio.gaodunwangxiao.com/yallist/4.0.0
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/magic-string/0.27.0:
+    resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/magic-string/-/magic-string-0.27.0.tgz}
+    name: magic-string
+    version: 0.27.0
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': npm-verdaccio.gaodunwangxiao.com/@jridgewell/sourcemap-codec/1.4.14
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/make-dir/3.1.0:
+    resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/make-dir/-/make-dir-3.1.0.tgz}
+    name: make-dir
+    version: 3.1.0
+    engines: {node: '>=8'}
+    dependencies:
+      semver: npm-verdaccio.gaodunwangxiao.com/semver/6.3.0
+    dev: true
+
   npm-verdaccio.gaodunwangxiao.com/make-error/1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/make-error/-/make-error-1.3.6.tgz}
     name: make-error
@@ -1919,6 +2059,15 @@ packages:
     version: 3.1.2
     dependencies:
       brace-expansion: npm-verdaccio.gaodunwangxiao.com/brace-expansion/1.1.11
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/minimatch/5.1.6:
+    resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/minimatch/-/minimatch-5.1.6.tgz}
+    name: minimatch
+    version: 5.1.6
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: npm-verdaccio.gaodunwangxiao.com/brace-expansion/2.0.1
     dev: true
 
   npm-verdaccio.gaodunwangxiao.com/minimist-options/4.1.0:
@@ -2124,6 +2273,15 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/pkg-dir/4.2.0:
+    resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/pkg-dir/-/pkg-dir-4.2.0.tgz}
+    name: pkg-dir
+    version: 4.2.0
+    engines: {node: '>=8'}
+    dependencies:
+      find-up: npm-verdaccio.gaodunwangxiao.com/find-up/4.1.0
+    dev: true
+
   npm-verdaccio.gaodunwangxiao.com/prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/prelude-ls/-/prelude-ls-1.2.1.tgz}
     name: prelude-ls
@@ -2283,6 +2441,24 @@ packages:
       glob: npm-verdaccio.gaodunwangxiao.com/glob/7.2.3
     dev: true
 
+  npm-verdaccio.gaodunwangxiao.com/rollup-plugin-typescript2/0.34.1_h4kaxwm6ctjivrsm4cpxaz7nqu:
+    resolution: {integrity: sha512-P4cHLtGikESmqi1CA+tdMDUv8WbQV48mzPYt77TSTOPJpERyZ9TXdDgjSDix8Fkqce6soYz3+fa4lrC93IEkcw==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/rollup-plugin-typescript2/-/rollup-plugin-typescript2-0.34.1.tgz}
+    id: npm-verdaccio.gaodunwangxiao.com/rollup-plugin-typescript2/0.34.1
+    name: rollup-plugin-typescript2
+    version: 0.34.1
+    peerDependencies:
+      rollup: '>=1.26.3'
+      typescript: '>=2.4.0'
+    dependencies:
+      '@rollup/pluginutils': npm-verdaccio.gaodunwangxiao.com/@rollup/pluginutils/4.2.1
+      find-cache-dir: npm-verdaccio.gaodunwangxiao.com/find-cache-dir/3.3.2
+      fs-extra: npm-verdaccio.gaodunwangxiao.com/fs-extra/10.1.0
+      rollup: npm-verdaccio.gaodunwangxiao.com/rollup/3.19.1
+      semver: npm-verdaccio.gaodunwangxiao.com/semver/7.3.8
+      tslib: npm-verdaccio.gaodunwangxiao.com/tslib/2.5.0
+      typescript: npm-verdaccio.gaodunwangxiao.com/typescript/4.9.5
+    dev: true
+
   npm-verdaccio.gaodunwangxiao.com/rollup/3.19.1:
     resolution: {integrity: sha512-lAbrdN7neYCg/8WaoWn/ckzCtz+jr70GFfYdlf50OF7387HTg+wiuiqJRFYawwSPpqfqDNYqK7smY/ks2iAudg==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/rollup/-/rollup-3.19.1.tgz}
     name: rollup
@@ -2311,6 +2487,13 @@ packages:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/semver/-/semver-5.7.1.tgz}
     name: semver
     version: 5.7.1
+    hasBin: true
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/semver/6.3.0:
+    resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/semver/-/semver-6.3.0.tgz}
+    name: semver
+    version: 6.3.0
     hasBin: true
     dev: true
 
@@ -2548,6 +2731,12 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/tslib/-/tslib-1.14.1.tgz}
     name: tslib
     version: 1.14.1
+    dev: true
+
+  npm-verdaccio.gaodunwangxiao.com/tslib/2.5.0:
+    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==, registry: http://npm-service.gaodunwangxiao.com/, tarball: https://npm-verdaccio.gaodunwangxiao.com/tslib/-/tslib-2.5.0.tgz}
+    name: tslib
+    version: 2.5.0
     dev: true
 
   npm-verdaccio.gaodunwangxiao.com/tsutils/3.21.0_typescript@4.9.5:
